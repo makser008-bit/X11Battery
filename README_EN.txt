@@ -1,4 +1,4 @@
-﻿X11 Battery Tray - version 0.8.1
+X11 Battery Tray - version 0.8.3
 =================================
 Українська версія: README.txt
 
@@ -233,6 +233,13 @@ TROUBLESHOOTING
 
 VERSION HISTORY
 ---------------
+0.8.3  The gap between widgets of different programs is 4 dp, like inside X11 Battery (they look like one
+       program). A widget can be placed in front of or behind a neighbour: when you drag past the
+       neighbour's middle it hops to the other side, but never lies on top of it. After switching
+       monitors, starting, or an Explorer restart, the widget that appeared moves away from those
+       already in place; overlap is checked every second.
+0.8.2  The Weather Tray, Load Tray and X11 Battery widgets no longer overlap: while dragging, a widget
+       stops at its neighbour and cannot jump over it, and a small gap is kept between widgets.
 0.8.1  The hover tooltip is now drawn by the program: no white border, rounded corners, follows the theme
        (it used to be the system tooltip with a bright border).
 0.8.0  Windows language auto-detection and program translation (23 languages), manual language choice in
@@ -259,3 +266,4 @@ VERSION HISTORY
 0.2.0  Battery widget next to the tray (mouse icon + %); DPI stage remembered between runs;
        settings in the registry; error log.
 0.1.0  First version: battery shown as a number icon in the system tray; autostart.
+
